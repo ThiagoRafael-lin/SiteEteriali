@@ -1,6 +1,6 @@
 import { Button } from "@/Components/Button";
 import { Carrousel } from "@/Components/Carrousel";
-import { Header } from "@/Components/Header";
+import { HeaderHome } from "@/components/Header";
 import { NossaMissao } from "@/components/NossaMissao";
 import { SecaoEtepiaal } from "@/components/SecaoEtepiaal";
 
@@ -23,7 +23,6 @@ export default function Home() {
       <Carrousel />
       <SecaoEtepiaal />
       <NossaMissao />
-      {/* Testando subir pro git hub */}
     </div>
   );
 }

@@ -15,12 +15,8 @@ export const NossaMissao = () => {
           </div>
           <div className="flex flex-row gap-12">
             <Button
-              styles="w-[300px] h-[65] text-[28px]"
-              children={"Ver Produto"}
-            />
-            <ButtonOutline
-              styles="w-[300px] h-[65] text-[28px]"
-              children={"Ver coleção"}
+              styles="w-[300px] h-[55px] text-[28px]"
+              children={"Entenda mais"}
             />
           </div>
         </div>

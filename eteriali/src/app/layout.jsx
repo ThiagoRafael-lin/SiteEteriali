@@ -1,7 +1,11 @@
+"use client";
+
 import localFont from "next/font/local";
 import "./globals.css";
-import { Header } from "@/components/Header";
+import { HeaderDefault, HeaderHome } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { useRouter } from "next/navigation";
+import { Metadata } from "@/metadata";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",
@@ -14,21 +18,20 @@ const sulphur = localFont({
   weight: "100 900",
 });
 
-export const metadata = {
-  title: "Eteriali",
-  description: "Eternizando memorias",
-};
+<Metadata />;
 
 export default function RootLayout({ children }) {
+  const router = useRouter();
+
   return (
     <html lang="en">
       <body className={`${lastri.variable} ${sulphur.variable} antialiased`}>
-        {/* <UserProvider> */}
-        <Header />
+        <div>
+          {router.pathname === "/" ? <HeaderHome /> : <HeaderDefault />}
+        </div>
 
         <main>{children}</main>
         <Footer />
-        {/* </UserProvider>/ */}
       </body>
     </html>
   );

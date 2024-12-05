@@ -3,7 +3,7 @@ import Logo from "../Assets/Img/LogoBranco.png";
 
 export const Footer = () => {
   return (
-    <div className="flex flex-row items-center justify-between bg-[#1C2730] mt-24 w-full max-h-96">
+    <div className="flex flex-row items-center justify-between bg-[#1C2730] w-full max-h-96">
       <div className="flex flex-col items-center p-12 h-full font-sulphur">
         <div className="flex items-center justify-center">
           <Image className="w-[122px] mb-4" src={Logo} alt="Logo da eteriali" />
