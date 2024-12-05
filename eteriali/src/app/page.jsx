@@ -1,11 +1,12 @@
 import { Button } from "@/Components/Button";
 import { Carrousel } from "@/Components/Carrousel";
 import { Header } from "@/Components/Header";
+import { NossaMissao } from "@/components/NossaMissao";
+import { SecaoEtepiaal } from "@/components/SecaoEtepiaal";
 
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-between w-full">
-      <Header />
       <div className="flex flex-col items-center mt-28 mb-36">
         <div>
           <h1 className="font-lastri text-[48px] mb-6">O que é Eteriali</h1>
@@ -20,6 +21,8 @@ export default function Home() {
         </div>
       </div>
       <Carrousel />
+      <SecaoEtepiaal />
+      <NossaMissao />
     </div>
   );
 }

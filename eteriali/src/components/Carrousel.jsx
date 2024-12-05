@@ -16,13 +16,14 @@ import { Button } from "./Button";
 
 export const Carrousel = () => {
   return (
-    <div>
-      <Carousel className="flex justify-center items-center border border-black py-12">
+    <div className="flex flex-col justify-center items-center ">
+      <div className="border border-gray w-screen max-w-6xl border-t-[1px]"></div>
+      <Carousel className="flex w-full max-w-6xl mx-auto justify-center items-center border-black py-12">
         <CarouselContent className="">
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image src={primeiraImagemCarrousel} alt="Um colar de diamante" />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -32,10 +33,10 @@ export const Carrousel = () => {
               <Button children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image src={segundaImagemCarrousel} alt="Um anel de diamante" />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -45,10 +46,10 @@ export const Carrousel = () => {
               <Button children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image src={terceiraImagemCarrousel} alt="Um brinco de diamante" />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -58,14 +59,14 @@ export const Carrousel = () => {
               <Button children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image
               className="w-[568px] h-[560px]"
               src={quartaImagemCarrousel}
               alt="Um diamante com uma safira"
             />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -75,14 +76,14 @@ export const Carrousel = () => {
               <Button children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image
               className="w-[568px] h-[450px]"
               src={quintaImagemCarrousel}
               alt="Um anel de diamante"
             />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -92,10 +93,10 @@ export const Carrousel = () => {
               <Button children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-64">
+          <CarouselItem className="flex items-center justify-center gap-11">
             <Image src={sextaImagemCarrousel} alt="Um brinco de esmeralda" />
-            <div className="flex flex-col w-[400px] items-start justify-center">
-              <h2 className="text-[48px] font-lastri w- ">Colar eterno</h2>
+            <div className="flex flex-col max-w-lg items-start justify-center">
+              <h2 className="text-[48px] font-lastri">Colar eterno</h2>
               <p className="leading-5 font-sulphur mb-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
@@ -109,6 +110,7 @@ export const Carrousel = () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <div className="border border-gray w-screen max-w-6xl border-t-[1px]"></div>
     </div>
   );
 };

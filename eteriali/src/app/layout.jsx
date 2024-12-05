@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",
@@ -21,7 +23,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${lastri.variable} ${sulphur.variable} antialiased`}>
-        {children}
+        {/* <UserProvider> */}
+        <Header />
+
+        <main>{children}</main>
+        <Footer />
+        {/* </UserProvider>/ */}
       </body>
     </html>
   );

@@ -4,7 +4,7 @@ import { Button } from "./Button";
 
 export const Header = () => {
   return (
-    <div className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen">
+    <div className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-4">
       <div className="flex flex-row items-center justify-between px-12">
         <div className="flex flex-row gap-20 text-[15px] text-white w-full">
           <a className="font-sulphur" href="">
