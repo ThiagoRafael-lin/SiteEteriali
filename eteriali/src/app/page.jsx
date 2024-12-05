@@ -23,6 +23,7 @@ export default function Home() {
       <Carrousel />
       <SecaoEtepiaal />
       <NossaMissao />
+      {/* Testando subir pro git hub */}
     </div>
   );
 }
