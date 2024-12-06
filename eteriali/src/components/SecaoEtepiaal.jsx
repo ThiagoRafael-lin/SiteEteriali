@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import primeiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca.png";
-import segundaImagem from "@/Assets/Img/FotoJoias/AnelPedraAzul.png";
+import segundaImagem from "@/Assets/Img/FotoJoias/AnelPedraAzulnovo.png";
 import terceiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca2.png";
 import quartaImagem from "@/Assets/Img/FotoJoias/ColarPedraBranca.png";
 import quintaImagem from "@/Assets/Img/FotoJoias/BrincoPedraVerde.png";
@@ -51,18 +51,22 @@ export const SecaoEtepiaalProdutos = () => {
       </div>
 
       <div className="flex flex-col gap-1">
-        <div className="flex flex-row gap-1">
-          <div className="flex flex-col max-w-xl gap-1">
-            <Image src={primeiraImagem} alt="Um anel de diamante" />
+        <div className="flex flex-row gap-1 justify-between">
+          <div className="flex flex-col gap-1 w-full">
             <Image
-              className="h-full"
+              className="w-full"
+              src={primeiraImagem}
+              alt="Um anel de diamante"
+            />
+            <Image
+              className=" w-full"
               src={terceiraImagem}
               alt="Um anel de diamante"
             />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col w-full">
             <Image
-              className="h-full"
+              className="h-full w-full"
               src={segundaImagem}
               alt="Um anel com uma saphira"
             />

@@ -5,7 +5,6 @@ import "./globals.css";
 import { HeaderDefault, HeaderHome } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { usePathname } from "next/navigation";
-import Metadata from "@/metadata";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",

@@ -16,7 +16,7 @@ export const SustentabilidadePrimeiraImagem = () => {
         </p>
       </div>
       <div className="">
-        <Image src={Microscopio} alt="Um microscopio" />
+        <Image className="w-full" src={Microscopio} alt="Um microscopio" />
       </div>
     </div>
   );
@@ -35,6 +35,7 @@ export const SustentabilidadeSegundaImagem = () => {
       </div>
       <div className="">
         <Image
+          className="w-full"
           src={MulherOlhandoNoMicroscopio}
           alt="Uma Mulher olhando em um microscopio"
         />

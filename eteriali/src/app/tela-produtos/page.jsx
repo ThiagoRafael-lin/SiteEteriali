@@ -6,7 +6,11 @@ import { SecaoEtepiaalProdutos } from "@/components/SecaoEtepiaal";
 export default function TelaProdutos() {
   return (
     <div>
-      <Image src={BannerWithText} alt="Banner com uma joia azul e um texto" />
+      <Image
+        className="w-full"
+        src={BannerWithText}
+        alt="Banner com uma joia azul e um texto"
+      />
       <SecaoEtepiaalProdutos />
     </div>
   );
