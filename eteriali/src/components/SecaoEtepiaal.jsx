@@ -1,14 +1,20 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Button, ButtonOutline } from "./Button";
+import Image from "next/image";
+import primeiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca.png";
+import segundaImagem from "@/Assets/Img/FotoJoias/AnelPedraAzul.png";
+import terceiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca2.png";
+import quartaImagem from "@/Assets/Img/FotoJoias/ColarPedraBranca.png";
+import quintaImagem from "@/Assets/Img/FotoJoias/BrincoPedraVerde.png";
+import sextaImagem from "@/Assets/Img/FotoJoias/BrincoPedraBranca.png";
+import { Button } from "./Button";
 
 export const SecaoEtepiaal = () => {
   const router = useRouter();
 
   const handleButtonClick = () => {
-    router.push("/tela-produto");
-    console.log("botao cliackdo");
+    router.push("/tela-produtos");
   };
 
   return (
@@ -25,12 +31,59 @@ export const SecaoEtepiaal = () => {
             </h2>
           </div>
           <div className="flex flex-row gap-12">
-            <button
-              className="flex items-center justify-center w-[300px] h-[55px] text-[28px] font-sulphur bg-[#BA9D53] text-white"
+            <Button
               onClick={handleButtonClick}
-              children={"Ver coleção"}
-            ></button>
+              styles="w-[300px] h-[55px] text-[28px]"
+              children={"Entenda mais"}
+            />
           </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const SecaoEtepiaalProdutos = () => {
+  return (
+    <div className="flex flex-col">
+      <div className="flex flex-row items-center justify-center mb-9 mt-24">
+        <h2 className="font-lastri text-[48px]">Coleção Etepiaal</h2>
+      </div>
+
+      <div className="flex flex-col gap-1">
+        <div className="flex flex-row gap-1">
+          <div className="flex flex-col max-w-xl gap-1">
+            <Image src={primeiraImagem} alt="Um anel de diamante" />
+            <Image
+              className="h-full"
+              src={terceiraImagem}
+              alt="Um anel de diamante"
+            />
+          </div>
+          <div className="flex flex-col">
+            <Image
+              className="h-full"
+              src={segundaImagem}
+              alt="Um anel com uma saphira"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row gap-1 mb-1">
+          <Image
+            className="w-[33.1%]"
+            src={quartaImagem}
+            alt="Um colar de diamante"
+          />
+          <Image
+            className="w-[33.1%]"
+            src={quintaImagem}
+            alt="Um brinco de esmeralda"
+          />
+          <Image
+            className="w-[33.1%]"
+            src={sextaImagem}
+            alt="Um brinco de diamante"
+          />
         </div>
       </div>
     </div>

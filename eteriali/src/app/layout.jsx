@@ -4,8 +4,8 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { HeaderDefault, HeaderHome } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { useRouter } from "next/navigation";
-import { Metadata } from "@/metadata";
+import { usePathname } from "next/navigation";
+import Metadata from "@/metadata";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",
@@ -18,17 +18,15 @@ const sulphur = localFont({
   weight: "100 900",
 });
 
-<Metadata />;
-
 export default function RootLayout({ children }) {
-  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <html lang="en">
-      <body className={`${lastri.variable} ${sulphur.variable} antialiased`}>
-        <div>
-          {router.pathname === "/" ? <HeaderHome /> : <HeaderDefault />}
-        </div>
+      <body
+        className={`${lastri.variable} ${sulphur.variable} antialiased no-scrollbar`}
+      >
+        <div>{pathname === "/" ? <HeaderHome /> : <HeaderDefault />}</div>
 
         <main>{children}</main>
         <Footer />

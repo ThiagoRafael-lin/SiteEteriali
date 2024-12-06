@@ -1,6 +1,15 @@
-import { Button, ButtonOutline } from "./Button";
+"use client";
+
+import { useRouter } from "next/navigation";
+import { Button } from "./Button";
 
 export const NossaMissao = () => {
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    router.push("/tela-sustentavel");
+  };
+
   return (
     <div className="flex flex-col w-full">
       <div className="flex flex-row items-center justify-center mb-9 mt-24">
@@ -15,6 +24,7 @@ export const NossaMissao = () => {
           </div>
           <div className="flex flex-row gap-12">
             <Button
+              onClick={handleButtonClick}
               styles="w-[300px] h-[55px] text-[28px]"
               children={"Entenda mais"}
             />
