@@ -1,15 +1,9 @@
 export default function TelaSobre() {
   return (
     <div>
-      <SustentabilidadePrimeiraImagem />
-      <SustentabilidadeSegundaImagem />
       <div className="flex items-center justify-center w-full mb-14 mt-14">
         <p className="font-sulphur text-[24px] w-3/4 text-center">
-          Nossos diamantes são o resultado de um processo científico preciso e
-          delicado, que nos permite criar pedras preciosas com a mesma qualidade
-          e beleza dos diamantes naturais, mas com um impacto ambiental
-          significativamente menor. Ao escolher uma de nossas joias, você está
-          eternizando um momento especial de forma sustentável e único.
+          Em um mundo acelerado, buscamos preservar os momentos mais preciosos. Nossas joias são mais do que acessórios, são tesouros que carregam consigo histórias e emoções. Transformamos cinzas e cabelos em diamantes eternos, criando peças únicas e personalizadas que celebram a vida e o amor.
         </p>
       </div>
     </div>
