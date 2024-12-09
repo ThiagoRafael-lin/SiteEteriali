@@ -13,8 +13,9 @@ export const HeaderDefault = () => {
     console.log("botao clicado");
   };
   return (
-    <div className="flex flex-row items-center justify-between px-12 my-6">
-      <div className="flex flex-row gap-20 text-[15px] text-balck w-full">
+    // Arrumar a parte do header com nav e ul
+    <nav className="flex flex-row items-center justify-between px-12 my-6">
+      <ul className="flex flex-row gap-20 text-[15px] text-balck w-full">
         <a className="font-sulphur" href="">
           Produto
         </a>
@@ -24,7 +25,7 @@ export const HeaderDefault = () => {
         <a className="font-sulphur" href="">
           Sobre
         </a>
-      </div>
+      </ul>
       <div className="flex justify-center w-full">
         <Image
           onClick={handleButtonClick}
@@ -35,7 +36,7 @@ export const HeaderDefault = () => {
       <div className="flex w-full justify-end">
         <Button children={"Login"} />
       </div>
-    </div>
+    </nav>
   );
 };
 

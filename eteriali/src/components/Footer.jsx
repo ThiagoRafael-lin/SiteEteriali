@@ -1,5 +1,17 @@
 import Image from "next/image";
 import Logo from "../Assets/Img/LogoBranco.png";
+import PinterestIcon from "@/Assets/Icons/PinterestIcon.png";
+import YouTubeIcon from "@/Assets/Icons/YouTubeIcon.png";
+import InstagramIcon from "@/Assets/Icons/InstagramIcon.png";
+import FacebookIcon from "@/Assets/Icons/FacebookIcon.png";
+import EmailIcon from "@/Assets/Icons/EmailIcon.png";
+import WhatsappIcon from "@/Assets/Icons/WhatsappIcon.png";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaPinterestP } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export const Footer = () => {
   return (
@@ -12,6 +24,26 @@ export const Footer = () => {
           <div>Rua Cardeal Arcoverde</div>
           <div>Pinheiros, São Paulo</div>
           <div>SP, 05408-002</div>
+          <div className="flex flex-row justify-between w-full items-center">
+            <div>
+              <FaPinterestP />
+            </div>
+            <div>
+              <FaYoutube />
+            </div>
+            <div>
+              <FaInstagram />
+            </div>
+            <div>
+              <FaFacebook />
+            </div>
+            <div>
+              <MdEmail />
+            </div>
+            <div>
+              <FaWhatsapp />
+            </div>
+          </div>
         </div>
       </div>
 

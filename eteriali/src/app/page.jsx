@@ -1,11 +1,10 @@
-"use client"
+"use client";
 
 import { Button } from "@/Components/Button";
 import { Carrousel } from "@/Components/Carrousel";
 import { NossaMissao } from "@/components/NossaMissao";
 import { SecaoEtepiaal } from "@/components/SecaoEtepiaal";
 import { useRouter } from "next/navigation";
-
 
 export default function Home() {
   const router = useRouter();
@@ -20,16 +19,12 @@ export default function Home() {
         <div>
           <h1 className="font-lastri text-[48px] mb-6">O que é Eteriali</h1>
         </div>
-        <div className="flex flex-row gap-4 w-[766px] justify-between">
-          <Button
-            styles="w-[328px] text-[20px]"
-            children={"Conheça nosso trabalho"}
-          />
-
+        <div className="flex flex-row gap-4 w-[766px] justify-center">
           <Button
             onClick={handleButtonClick}
             styles="w-[328px] text-[20px]"
-            children={"Conheça a gente"} />
+            children={"Conheça a gente"}
+          />
         </div>
       </div>
       <Carrousel />
