@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/Components/Button";
-import { Carrousel } from "@/Components/Carrousel";
+import { Button } from "@/components/Button";
+import { Carrousel } from "@/components/Carrousel";
 import { NossaMissao } from "@/components/NossaMissao";
 import { SecaoEtepiaal } from "@/components/SecaoEtepiaal";
 import { useRouter } from "next/navigation";

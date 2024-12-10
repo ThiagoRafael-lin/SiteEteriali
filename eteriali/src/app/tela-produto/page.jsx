@@ -22,6 +22,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import LocalizacaoModal from "@/components/Modals/localizacaoModal";
 
 export default function TelaProduto() {
   const plugin = React.useRef(
@@ -44,6 +45,24 @@ export default function TelaProduto() {
     { id: 6, src: DiamanteSozinho, alt: "Um diamante" },
   ];
 
+  let subtitle;
+  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+  React.useEffect(() => {
+    if (modalIsOpen) {
+      console.log("Modal está aberto!");
+    }
+  }, [modalIsOpen]);
+
+  function openModal() {
+    setModalIsOpen(true);
+    console.log("botão clicado");
+  }
+
+  function closeModal() {
+    setModalIsOpen(false);
+  }
+
   return (
     <div>
       <div className="flex items-center justify-center gap-20 mt-20">
@@ -60,7 +79,7 @@ export default function TelaProduto() {
             peça única e atemporal. Uma criação que homenageia a vida e o amor,
             perpetuando a lembrança daqueles que amamos.
           </p>
-          <Button children={"Entre em contato"} />
+          <Button onClick={openModal} children={"Entre em contato"} />
         </div>
       </div>
       <div className="flex flex-row items-center justify-center mt-24">
@@ -87,6 +106,11 @@ export default function TelaProduto() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+      <LocalizacaoModal
+        isOpen={modalIsOpen}
+        setIsOpen={setModalIsOpen}
+        closeModal={closeModal}
+      />
     </div>
   );
 }
