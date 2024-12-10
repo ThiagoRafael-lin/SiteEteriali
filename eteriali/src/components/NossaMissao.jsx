@@ -15,7 +15,7 @@ export const NossaMissao = () => {
       <div className="flex flex-row items-center justify-center mb-9 mt-24">
         <h2 className="font-lastri text-[48px]">Nossa Missão</h2>
       </div>
-      <div className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center  w-full h-screen">
+      <div className="bg-[url('../Assets/Img/BannerSustentabilidade.png')] bg-cover bg-center  w-full h-screen">
         <div className=" flex flex-col items-end justify-end h-full pb-4 pr-4">
           <div>
             <h2 className="text-[64px] text-white font-lastri w-72 text-end leading-none mb-8 mr-6">

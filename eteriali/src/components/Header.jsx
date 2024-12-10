@@ -5,6 +5,7 @@ import Logo from "../Assets/Img/LogoBranco.png";
 import LogoPreto from "../Assets/Img/LogoPreto.png";
 import { Button } from "./Button";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export const HeaderDefault = () => {
   const router = useRouter();
@@ -12,19 +13,19 @@ export const HeaderDefault = () => {
     router.push("/");
     console.log("botao clicado");
   };
+
   return (
-    // Arrumar a parte do header com nav e ul
     <nav className="flex flex-row items-center justify-between px-12 my-6">
       <ul className="flex flex-row gap-20 text-[15px] text-balck w-full">
-        <a className="font-sulphur" href="">
+        <Link href="/tela-produtos" className="font-sulphur">
           Produto
-        </a>
-        <a className="font-sulphur" href="">
+        </Link>
+        <Link href="/tela-sustentavel" className="font-sulphur">
           Sustentável
-        </a>
-        <a className="font-sulphur" href="">
+        </Link>
+        <Link href="/tela-sobre" className="font-sulphur">
           Sobre
-        </a>
+        </Link>
       </ul>
       <div className="flex justify-center w-full">
         <Image
@@ -32,9 +33,6 @@ export const HeaderDefault = () => {
           src={LogoPreto}
           alt="Logo da eteriali"
         />
-      </div>
-      <div className="flex w-full justify-end">
-        <Button children={"Login"} />
       </div>
     </nav>
   );
@@ -47,30 +45,27 @@ export const HeaderHome = () => {
     console.log("botao clicado");
   };
   return (
-    <div className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-4">
-      <div className="flex flex-row items-center justify-between px-12">
-        <div className="flex flex-row gap-20 text-[15px] text-white w-full">
-          <a className="font-sulphur" href="">
+    <nav className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-6">
+      <ul className="flex flex-row items-center justify-between px-12">
+        <div className="flex flex-row gap-20 text-[15px] text-white">
+          <Link href="/tela-produtos" className="font-sulphur">
             Produto
-          </a>
-          <a className="font-sulphur" href="">
+          </Link>
+          <Link href="/tela-sustentavel" className="font-sulphur">
             Sustentável
-          </a>
-          <a className="font-sulphur" href="">
+          </Link>
+          <Link href="/tela-sobre" className="font-sulphur">
             Sobre
-          </a>
+          </Link>
         </div>
-        <div className="flex justify-center w-full">
+        <div className="flex justify-center pr-72 w-full">
           <Image
             onClick={handleButtonClick}
             src={Logo}
             alt="Logo da eteriali"
           />
         </div>
-        <div className="flex w-full justify-end">
-          <Button children={"Login"} />
-        </div>
-      </div>
-    </div>
+      </ul>
+    </nav>
   );
 };

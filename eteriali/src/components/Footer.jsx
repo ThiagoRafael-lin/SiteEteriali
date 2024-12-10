@@ -12,6 +12,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -50,9 +51,15 @@ export const Footer = () => {
       <div className="flex flex-col items-start text-white p-12 h-full font-sulphur">
         <div className="text-[24px] mb-4">Páginas</div>
         <div className="flex flex-col items-start text-[14px] justify- gap-2">
-          <div>Produto</div>
-          <div>Sustentável</div>
-          <div>Sobre</div>
+          <Link href="/tela-produtos" className="font-sulphur">
+            Produto
+          </Link>
+          <Link href="/tela-sustentavel" className="font-sulphur">
+            Sustentável
+          </Link>
+          <Link href="/tela-sobre" className="font-sulphur">
+            Sobre
+          </Link>
         </div>
       </div>
 
