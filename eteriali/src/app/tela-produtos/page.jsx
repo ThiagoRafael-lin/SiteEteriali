@@ -4,6 +4,14 @@ import BannerWithText from "@/Assets/Img/BannerWithText.png";
 import { SecaoEtepiaalProdutos } from "@/components/SecaoEtepiaal";
 
 export default function TelaProdutos() {
+  function ImageCard(src, alt, id) {
+    const [imagemSelecionada, setImagemSelecionada] = React.useState(null);
+
+    const ClickSelectImage = () => {
+      setImagemSelecionada(id);
+    };
+  }
+
   return (
     <div>
       <Image

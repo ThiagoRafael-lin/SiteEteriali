@@ -9,6 +9,13 @@ import quartaImagemCarrousel from "@/Assets/Img/FotoJoias/AnelPedraAzul.png";
 import quintaImagemCarrousel from "@/Assets/Img/FotoJoias/AnelPedraBranca2.png";
 import sextaImagemCarrousel from "@/Assets/Img/FotoJoias/BrincoPedraVerde.png";
 
+import primeiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca.png";
+import segundaImagem from "@/Assets/Img/FotoJoias/AnelPedraAzulnovo.png";
+import terceiraImagem from "@/Assets/Img/FotoJoias/AnelPedraBranca2.png";
+import quartaImagem from "@/Assets/Img/FotoJoias/ColarPedraBranca.png";
+import quintaImagem from "@/Assets/Img/FotoJoias/BrincoPedraVerde.png";
+import sextaImagem from "@/Assets/Img/FotoJoias/BrincoPedraBranca.png";
+
 import TresAneis from "@/Assets/Img/FotoJoias/TresAneis.png";
 import CaixaComAnelDentro from "@/Assets/Img/FotoJoias/CaixaComAnelDentro.png";
 import DiamanteSozinho from "@/Assets/Img/FotoJoias/DiamanteSozinho.png";
@@ -23,8 +30,10 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import LocalizacaoModal from "@/components/Modals/localizacaoModal";
+import { useRouter } from "next/router";
+import ImageCard from "@/components/ImageCard";
 
-export default function TelaProduto() {
+export default function TelaProduto({ id }) {
   const plugin = React.useRef(
     Autoplay({ delay: 5000, stopOnInteraction: true })
   );
@@ -47,6 +56,22 @@ export default function TelaProduto() {
 
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
+  const images = {
+    1: { id: 1, src: primeiraImagem, alt: "Imagem 1" },
+    2: { id: 2, src: segundaImagem, alt: "Imagem 2" },
+    2: { id: 3, src: terceiraImagem, alt: "Imagem 2" },
+    2: { id: 4, src: quartaImagem, alt: "Imagem 2" },
+    2: { id: 5, src: quintaImagem, alt: "Imagem 2" },
+    2: { id: 6, src: sextaImagem, alt: "Imagem 2" },
+  };
+
+  const router = useRouter();
+  const { id } = router.query;
+
+  const selectedImage = images[id];
+
+  const hasValidImage = selectedImage && selectedImage.src;
+
   React.useEffect(() => {
     if (modalIsOpen) {
       console.log("Modal está aberto!");
@@ -65,11 +90,16 @@ export default function TelaProduto() {
   return (
     <div>
       <div className="flex items-center justify-center gap-20 mt-20">
-        <Image
+        {hasValidImage ? (
+          <Image src={selectedImage.src} alt={selectedImage.alt} />
+        ) : (
+          <p>Imagem não encontrada</p> // Ou outro componente de fallback
+        )}
+        {/* <Image
           className="w-96"
           src={primeiraImagemCarrousel}
           alt="Um colar de diamante"
-        />
+        /> */}
         <div className="flex flex-col max-w-lg items-start justify-center">
           <h2 className="text-[48px] font-lastri">Colar eterno</h2>
           <p className="leading-5 font-sulphur mb-4">
@@ -108,10 +138,18 @@ export default function TelaProduto() {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
       <LocalizacaoModal
         isOpen={modalIsOpen}
         setIsOpen={setModalIsOpen}
         closeModal={closeModal}
+      />
+
+      <ImageCard
+        id={images[id].id}
+        {...images[id]}
+        src={images.src}
+        alt={images.alt}
       />
     </div>
   );

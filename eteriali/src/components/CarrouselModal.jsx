@@ -59,8 +59,6 @@ export const CarrouselModal = () => {
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
       </Carousel>
     </div>
   );

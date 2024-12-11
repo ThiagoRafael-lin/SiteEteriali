@@ -30,7 +30,6 @@ export const Carrousel = () => {
     router.push("/tela-produto");
     console.log("botao clicado");
   };
-
   return (
     <div className="flex flex-col justify-center items-center ">
       <div className="border border-gray w-screen max-w-6xl border-t-[1px]"></div>

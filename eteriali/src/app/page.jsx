@@ -13,6 +13,7 @@ export default function Home() {
     router.push("/tela-sobre");
     console.log("Botão clicado");
   };
+
   return (
     <div className="flex flex-col items-center justify-between w-full">
       <div className="flex flex-col items-center mt-28 mb-36">

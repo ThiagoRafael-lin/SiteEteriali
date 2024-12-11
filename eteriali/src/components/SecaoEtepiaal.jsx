@@ -9,6 +9,7 @@ import quartaImagem from "@/Assets/Img/FotoJoias/ColarPedraBranca.png";
 import quintaImagem from "@/Assets/Img/FotoJoias/BrincoPedraVerde.png";
 import sextaImagem from "@/Assets/Img/FotoJoias/BrincoPedraBranca.png";
 import { Button } from "./Button";
+import ImageCard from "./ImageCard";
 
 export const SecaoEtepiaal = () => {
   const router = useRouter();
@@ -53,6 +54,53 @@ export const SecaoEtepiaalProdutos = () => {
       <div className="flex flex-col gap-1">
         <div className="flex flex-row gap-1 justify-between">
           <div className="flex flex-col gap-1 w-full">
+            <ImageCard
+              className="w-full"
+              src={primeiraImagem}
+              alt="Um anel de diamante"
+              id={1}
+            />
+            <ImageCard
+              className=" w-full"
+              src={terceiraImagem}
+              alt="Um anel de diamante"
+              id={3}
+            />
+          </div>
+          <div className="flex flex-col w-full">
+            <ImageCard
+              className="h-full w-full"
+              src={segundaImagem}
+              alt="Um anel com uma saphira"
+              id={2}
+            />
+          </div>
+        </div>
+        <div className="flex flex-row gap-1 mb-1">
+          <ImageCard
+            className="w-[33.1%]"
+            src={quartaImagem}
+            alt="Um colar de diamante"
+            id={4}
+          />
+          <ImageCard
+            className="w-[33.1%]"
+            src={quintaImagem}
+            alt="Um brinco de esmeralda"
+            id={5}
+          />
+          <ImageCard
+            className="w-[33.1%]"
+            src={sextaImagem}
+            alt="Um brinco de diamante"
+            id={6}
+          />
+        </div>
+      </div>
+
+      {/* <div className="flex flex-col gap-1">
+        <div className="flex flex-row gap-1 justify-between">
+          <div className="flex flex-col gap-1 w-full">
             <Image
               className="w-full"
               src={primeiraImagem}
@@ -89,7 +137,7 @@ export const SecaoEtepiaalProdutos = () => {
             alt="Um brinco de diamante"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
