@@ -45,7 +45,6 @@ export default function TelaProduto() {
     { id: 6, src: DiamanteSozinho, alt: "Um diamante" },
   ];
 
-  let subtitle;
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
 
   React.useEffect(() => {
@@ -82,8 +81,11 @@ export default function TelaProduto() {
           <Button onClick={openModal} children={"Entre em contato"} />
         </div>
       </div>
-      <div className="flex flex-row items-center justify-center mt-24">
+      <div className="flex flex-col items-center justify-center mt-24">
         <h2 className="font-lastri text-[40px]">Lumina</h2>
+        <p className="font-sulphur text-[16px]">
+          Um vislumbre do que está por vir
+        </p>
       </div>
       <Carousel
         plugins={[plugin.current]}
