@@ -8,6 +8,17 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import LocalizacaoModal from "./Modals/localizacaoModal";
 import * as React from "react";
+import {
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerDescription,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+} from "@/components/ui/drawer";
+import menuHamburguer from "@/Assets/Icons/menuHambuerguer.svg";
 
 export const HeaderDefault = () => {
   const router = useRouter();
@@ -90,35 +101,54 @@ export const HeaderHome = () => {
   }
 
   return (
-    <nav className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-6">
-      <ul className="flex flex-row items-center justify-between px-12">
-        <div className="flex flex-row gap-20 text-[15px] text-white w-full">
-          <Link href="/tela-produtos" className="font-sulphur">
-            Produto
-          </Link>
-          <Link href="/tela-sustentavel" className="font-sulphur">
-            Sustentável
-          </Link>
-          <Link href="/tela-sobre" className="font-sulphur">
-            Sobre
-          </Link>
-        </div>
-        <div className="flex justify-center w-full">
-          <Image
-            onClick={handleButtonClick}
-            src={Logo}
-            alt="Logo da eteriali"
-          />
-        </div>
-        <div className="flex justify-end w-full ">
-          <Button onClick={openModal} children="Loja fisica" styles="" />
-        </div>
-      </ul>
-      <LocalizacaoModal
-        isOpen={modalIsOpen}
-        setIsOpen={setModalIsOpen}
-        closeModal={closeModal}
-      />
-    </nav>
+    <>
+      <nav className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-6 max-sm:hidden">
+        <ul className="flex flex-row items-center justify-between px-12">
+          <div className="flex flex-row gap-20 text-[15px] text-white w-full">
+            <Link href="/tela-produtos" className="font-sulphur">
+              Produto
+            </Link>
+            <Link href="/tela-sustentavel" className="font-sulphur">
+              Sustentável
+            </Link>
+            <Link href="/tela-sobre" className="font-sulphur">
+              Sobre
+            </Link>
+          </div>
+          <div className="flex justify-center w-full">
+            <Image
+              onClick={handleButtonClick}
+              src={Logo}
+              alt="Logo da eteriali"
+            />
+          </div>
+          <div className="flex justify-end w-full ">
+            <Button onClick={openModal} children="Loja fisica" styles="" />
+          </div>
+        </ul>
+        <LocalizacaoModal
+          isOpen={modalIsOpen}
+          setIsOpen={setModalIsOpen}
+          closeModal={closeModal}
+        />
+      </nav>
+      <Drawer>
+        <DrawerTrigger className="flex justify-end pr-4 pt-4 text-black w-full">
+          <Image className="w-8" src={menuHamburguer} alt="menu hamburguer" />
+        </DrawerTrigger>
+        <DrawerContent className="w-96 h-screen">
+          <DrawerHeader className="flex items-center justify-center">
+            <DrawerTitle>Are you absolutely sure?</DrawerTitle>
+            <DrawerDescription>This action cannot be undone.</DrawerDescription>
+          </DrawerHeader>
+          <DrawerFooter className="flex items-center justify-center">
+            <Button>Submit</Button>
+            <DrawerClose>
+              <Button variant="outline">Cancel</Button>
+            </DrawerClose>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
+    </>
   );
 };

@@ -21,20 +21,23 @@ export const SecaoEtepiaal = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="flex flex-row items-center justify-center mb-9 mt-24">
-        <h2 className="font-lastri text-[48px]">Coleção Etepiaal</h2>
+        <h2 className="font-lastri text-[48px] max-sm:text-[32px]">
+          Coleção Etepiaal
+        </h2>
       </div>
 
-      <div className="bg-[url('../Assets/Img/BannerSecaoEtepiaal.png')] bg-cover bg-center  w-full h-screen">
-        <div className=" flex flex-col items-end justify-end h-full pb-4 pr-4">
+      {/* DEIXAR A TITULO E BOTÃO EMBAIXO DA IMAGEM */}
+      <div className="bg-[url('../Assets/Img/BannerSecaoEtepiaal.png')] bg-cover bg-center w-full h-screen max-sm:max-w-full max-sm:max-h-72">
+        <div className=" flex flex-col items-end justify-end h-full pb-4 pr-4 max-sm:flex max-sm:justify-end">
           <div>
-            <h2 className="text-[64px] text-white font-lastri w-72 text-end leading-none mb-8">
+            <h2 className="text-[64px] text-white font-lastri w-72 text-end leading-none mb-8 max-sm:text-[32px]">
               Joias Eternas
             </h2>
           </div>
-          <div className="flex flex-row gap-12">
+          <div className="flex flex-row gap-12 max-sm:w-36">
             <Button
               onClick={handleButtonClick}
-              styles="w-[300px] h-[55px] text-[28px]"
+              styles="w-[300px] h-[55px] text-[28px] max-sm:text-[20px]"
               children={"Entenda mais"}
             />
           </div>
