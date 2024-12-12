@@ -5,6 +5,8 @@ import "./globals.css";
 import { HeaderDefault, HeaderHome } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { usePathname } from "next/navigation";
+import Head from "next/head";
+import { Metadata } from "@/metadata";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",
@@ -25,6 +27,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${lastri.variable} ${sulphur.variable} antialiased no-scrollbar`}
       >
+        <Head>
+          <title>{Metadata.title}</title>
+          <meta name="description" content={Metadata.description} />
+        </Head>
         <div>{pathname === "/" ? <HeaderHome /> : <HeaderDefault />}</div>
 
         <main>{children}</main>

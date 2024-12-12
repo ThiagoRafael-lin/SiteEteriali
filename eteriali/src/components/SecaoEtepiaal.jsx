@@ -51,53 +51,6 @@ export const SecaoEtepiaalProdutos = () => {
         <h2 className="font-lastri text-[48px]">Coleção Etepiaal</h2>
       </div>
 
-      <div className="flex flex-col gap-1">
-        <div className="flex flex-row gap-1 justify-between">
-          <div className="flex flex-col gap-1 w-full">
-            <ImageCard
-              className="w-full"
-              src={primeiraImagem}
-              alt="Um anel de diamante"
-              id={1}
-            />
-            <ImageCard
-              className=" w-full"
-              src={terceiraImagem}
-              alt="Um anel de diamante"
-              id={3}
-            />
-          </div>
-          <div className="flex flex-col w-full">
-            <ImageCard
-              className="h-full w-full"
-              src={segundaImagem}
-              alt="Um anel com uma saphira"
-              id={2}
-            />
-          </div>
-        </div>
-        <div className="flex flex-row gap-1 mb-1">
-          <ImageCard
-            className="w-[33.1%]"
-            src={quartaImagem}
-            alt="Um colar de diamante"
-            id={4}
-          />
-          <ImageCard
-            className="w-[33.1%]"
-            src={quintaImagem}
-            alt="Um brinco de esmeralda"
-            id={5}
-          />
-          <ImageCard
-            className="w-[33.1%]"
-            src={sextaImagem}
-            alt="Um brinco de diamante"
-            id={6}
-          />
-        </div>
-      </div>
-
       {/* <div className="flex flex-col gap-1">
         <div className="flex flex-row gap-1 justify-between">
           <div className="flex flex-col gap-1 w-full">
@@ -138,6 +91,47 @@ export const SecaoEtepiaalProdutos = () => {
           />
         </div>
       </div> */}
+
+      <div className="flex flex-col gap-1">
+        <div className="flex flex-row gap-1 justify-between">
+          <div className="flex flex-col gap-1 w-full">
+            <Image
+              className="w-full"
+              src={primeiraImagem}
+              alt="Um anel de diamante"
+            />
+            <Image
+              className=" w-full"
+              src={terceiraImagem}
+              alt="Um anel de diamante"
+            />
+          </div>
+          <div className="flex flex-col w-full">
+            <Image
+              className="h-full w-full"
+              src={segundaImagem}
+              alt="Um anel com uma saphira"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row gap-1 mb-1">
+          <Image
+            className="w-[33.1%]"
+            src={quartaImagem}
+            alt="Um colar de diamante"
+          />
+          <Image
+            className="w-[33.1%]"
+            src={quintaImagem}
+            alt="Um brinco de esmeralda"
+          />
+          <Image
+            className="w-[33.1%]"
+            src={sextaImagem}
+            alt="Um brinco de diamante"
+          />
+        </div>
+      </div>
     </div>
   );
 };
