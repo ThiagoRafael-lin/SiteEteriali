@@ -17,7 +17,7 @@ import Link from "next/link";
 export const Footer = () => {
   return (
     <div className="flex flex-row items-center justify-between bg-[#1C2730] w-full max-h-96 max-sm:flex max-sm:flex-col max-sm:max-h-full max-sm:items-center max-sm:gap-12">
-      <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:p-0">
+      <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:py-8">
         <div className="flex items-center justify-center">
           <Image className="w-[122px] mb-4" src={Logo} alt="Logo da eteriali" />
         </div>

@@ -19,6 +19,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import menuHamburguer from "@/Assets/Icons/menuHambuerguer.svg";
+import BannerHeaderHome from "@/Assets/Img/BannerHome.png";
 
 export const HeaderDefault = () => {
   const router = useRouter();
@@ -132,11 +133,35 @@ export const HeaderHome = () => {
           closeModal={closeModal}
         />
       </nav>
-      <Drawer>
-        <DrawerTrigger className="flex justify-end pr-4 pt-4 text-black w-full">
-          <Image className="w-8" src={menuHamburguer} alt="menu hamburguer" />
-        </DrawerTrigger>
-        <DrawerContent className="w-96 h-screen">
+      <Drawer className="">
+        <div className="flex w-full justify-end">
+          <div className="flex justify-center items-center bg-green-500 w-full">
+            <Image
+              className="w-16 h-8"
+              src={LogoPreto}
+              alt="Logo do eteriali"
+            />
+          </div>
+          <div className="max-sm:bg-red-500 flex flex-col justify-end w-24 p-4 md:hidden items-end">
+            <DrawerTrigger className="">
+              <div className="flex flex-row w-full justify-between">
+                <Image
+                  className="w-6"
+                  src={menuHamburguer}
+                  alt="menu hamburguer"
+                />
+              </div>
+            </DrawerTrigger>
+          </div>
+        </div>
+        <div>
+          <Image
+            className="md:hidden"
+            src={BannerHeaderHome}
+            alt="Banner com um colar com uma joia"
+          />
+        </div>
+        <DrawerContent className="w-96 ">
           <DrawerHeader className="flex items-center justify-center">
             <DrawerTitle>Are you absolutely sure?</DrawerTitle>
             <DrawerDescription>This action cannot be undone.</DrawerDescription>

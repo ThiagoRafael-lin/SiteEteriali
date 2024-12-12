@@ -32,6 +32,7 @@ export default function Home() {
       </div>
       <Carrousel />
       <SecaoEtepiaal />
+      <div className="border border-gray w-screen max-w-6xl border-t-[1px]" />
       <NossaMissao />
     </div>
   );

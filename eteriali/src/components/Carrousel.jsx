@@ -35,7 +35,7 @@ export const Carrousel = () => {
       <div className="border border-gray w-screen max-w-6xl border-t-[1px]"></div>
       <Carousel
         plugins={[plugin.current]}
-        className="flex w-full max-w-6xl mx-auto justify-center items-center border-black py-12 max-sm:max-w-auto max-sm:py-0"
+        className="flex w-full max-w-6xl mx-auto justify-center items-center border-black py-12 max-sm:max-w-auto max-sm:py-0 max-sm:pt-0"
       >
         <CarouselContent className="">
           <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col max-sm:w-20">
