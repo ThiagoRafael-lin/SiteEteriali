@@ -63,7 +63,7 @@ export const HeaderDefault = () => {
         </ul>
         <div className="flex justify-center w-full">
           <Image
-            onClick={handleButtonClick}
+            onClick={() => router.push("/", { scroll: false })}
             src={LogoPreto}
             alt="Logo da eteriali"
           />
@@ -177,19 +177,28 @@ export const HeaderHome = () => {
       <nav className="bg-[url('../Assets/Img/BannerHome.png')] bg-cover bg-center w-full h-screen pt-6 max-sm:hidden">
         <ul className="flex flex-row items-center justify-between px-12">
           <div className="flex flex-row gap-20 text-[15px] text-white w-full">
-            <Link href="/tela-produtos" className="font-sulphur">
+            <Link
+              href="/tela-produtos"
+              className="font-sulphur hover:opacity-35 transition-all"
+            >
               Produto
             </Link>
-            <Link href="/tela-sustentavel" className="font-sulphur">
+            <Link
+              href="/tela-sustentavel"
+              className="font-sulphur hover:opacity-35 transition-all"
+            >
               Sustentável
             </Link>
-            <Link href="/tela-sobre" className="font-sulphur">
+            <Link
+              href="/tela-sobre"
+              className="font-sulphur hover:opacity-35 transition-all"
+            >
               Sobre
             </Link>
           </div>
           <div className="flex justify-center w-full">
             <Image
-              onClick={handleButtonClick}
+              onClick={() => router.push("/", { scroll: false })}
               src={Logo}
               alt="Logo da eteriali"
             />
@@ -210,7 +219,7 @@ export const HeaderHome = () => {
         <div className="flex w-full justify-end">
           <div className="flex justify-start items-center pl-4 w-full py-4">
             <Image
-              className="w-20 h-10"
+              className="w-20 h-10 md:hidden"
               src={LogoPreto}
               alt="Logo do eteriali"
               onClick={handleButtonClick}

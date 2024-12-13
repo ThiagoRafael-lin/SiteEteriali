@@ -6,7 +6,7 @@ import { HeaderDefault, HeaderHome } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { usePathname } from "next/navigation";
 import Head from "next/head";
-import { Metadata } from "@/metadata";
+import { Metadata } from "next";
 
 const lastri = localFont({
   src: "./fonts/Lastri.otf",
@@ -28,8 +28,12 @@ export default function RootLayout({ children }) {
         className={`${lastri.variable} ${sulphur.variable} antialiased no-scrollbar`}
       >
         <Head>
-          <title>{Metadata.title}</title>
-          <meta name="description" content={Metadata.description} />
+          <link
+            rel="icon"
+            href="/LogoIconPretoCERTO.svg"
+            type="image/svg+xml"
+          />
+          <title>Sua Aplicação</title>
         </Head>
         <div>{pathname === "/" ? <HeaderHome /> : <HeaderDefault />}</div>
 

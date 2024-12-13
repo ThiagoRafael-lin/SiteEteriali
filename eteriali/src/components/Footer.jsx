@@ -16,6 +16,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
+    // NAVEGAÇÃO DESKTOP
     <div className="flex flex-row items-center justify-between bg-[#1C2730] w-full max-h-96 max-sm:flex max-sm:flex-col max-sm:max-h-full max-sm:items-center max-sm:gap-12">
       <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:py-8 max-sm:hidden">
         <div className="flex items-center justify-center">
@@ -27,22 +28,30 @@ export const Footer = () => {
           <div>SP, 05408-002</div>
           <div className="flex flex-row justify-between w-full items-center">
             <div>
-              <FaPinterestP />
+              <a href="https://br.pinterest.com/eteriali/">
+                <FaPinterestP />
+              </a>
             </div>
             <div>
-              <FaYoutube />
+              <a href="https://www.youtube.com/channel/UCkVVcspTj9KsEIE2cCboFQg">
+                <FaYoutube />
+              </a>
             </div>
             <div>
-              <FaInstagram />
+              <a href="https://www.instagram.com/eteriali_diamantes/">
+                <FaInstagram />
+              </a>
             </div>
-            <div>
+            {/* <div>
               <FaFacebook />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <MdEmail />
-            </div>
+            </div> */}
             <div>
-              <FaWhatsapp />
+              <a href="https://wa.me/5511998765432?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20informações">
+                <FaWhatsapp />
+              </a>
             </div>
           </div>
         </div>
@@ -51,13 +60,22 @@ export const Footer = () => {
       <div className="flex flex-col items-start text-white p-12 h-full font-sulphur max-sm:items-center max-sm:p-0 max-sm:pt-8">
         <div className="text-[24px] mb-4">Páginas</div>
         <div className="flex flex-col items-start text-[14px] gap-2 max-sm:items-center">
-          <Link href="/tela-produtos" className="font-sulphur">
+          <Link
+            href="/tela-produtos"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Produto
           </Link>
-          <Link href="/tela-sustentavel" className="font-sulphur">
+          <Link
+            href="/tela-sustentavel"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Sustentável
           </Link>
-          <Link href="/tela-sobre" className="font-sulphur">
+          <Link
+            href="/tela-sobre"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Sobre
           </Link>
         </div>
@@ -72,6 +90,7 @@ export const Footer = () => {
         </div>
       </div>
 
+      {/* NAVEGAÇÃO MOBILE */}
       <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:py-8 md:hidden">
         <div className="flex items-center justify-center">
           <Image className="w-[122px] mb-4" src={Logo} alt="Logo da eteriali" />
@@ -87,7 +106,7 @@ export const Footer = () => {
               </a>
             </div>
             <div>
-              <a href="">
+              <a href="https://www.youtube.com/channel/UCkVVcspTj9KsEIE2cCboFQg">
                 <FaYoutube />
               </a>
             </div>
@@ -96,18 +115,18 @@ export const Footer = () => {
                 <FaInstagram />
               </a>
             </div>
-            <div>
+            {/* <div>
               <a href="">
                 <FaFacebook />
               </a>
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <a href="">
                 <MdEmail />
               </a>
-            </div>
+            </div> */}
             <div>
-              <a href="">
+              <a href="https://wa.me/5511998765432?text=Olá,%20vim%20do%20site%20e%20gostaria%20de%20saber%20mais%20informações">
                 <FaWhatsapp />
               </a>
             </div>

@@ -71,15 +71,17 @@ export default function TelaProduto({ id }) {
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-20 mt-20">
+      <div className="flex items-center justify-center gap-20 mt-20 max-sm:flex-col max-sm:items-center max-sm:justify-center max-sm:gap-8">
         <Image
-          className="w-96"
+          className="w-96 max-sm:w-64"
           src={primeiraImagemCarrousel}
           alt="Um colar de diamante"
         />
-        <div className="flex flex-col max-w-lg items-start justify-center">
-          <h2 className="text-[48px] font-lastri">Memória Luminosa</h2>
-          <p className="leading-5 font-sulphur mb-4">
+        <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
+          <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
+            Memória Luminosa
+          </h2>
+          <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4 ">
             Imagine um colar que vai além de uma simples joia. Um colar que
             carrega consigo a essência de um ente querido, transformada em uma
             peça única e atemporal. Uma criação que homenageia a vida e o amor,
@@ -103,17 +105,24 @@ export default function TelaProduto({ id }) {
       >
         <CarouselContent>
           {imagensLumina.map((image) => (
-            <CarouselItem key={image.id} className="md:basis-1/2 lg:basis-1/3 ">
+            <CarouselItem
+              key={image.id}
+              className="md:basis-1/2 lg:basis-1/3 max-sm:flex max-sm:items-center max-sm:justify-center"
+            >
               <div className="p-1">
                 <span className="text-3xl font-semibold">
-                  <Image className="w-96" src={image.src} alt={image.alt} />
+                  <Image
+                    className="w-96 max-sm:w-80"
+                    src={image.src}
+                    alt={image.alt}
+                  />
                 </span>
               </div>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        {/* <CarouselPrevious />
+        <CarouselNext /> */}
       </Carousel>
 
       <LocalizacaoModal

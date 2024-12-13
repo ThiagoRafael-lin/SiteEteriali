@@ -138,7 +138,7 @@ export const Carrousel = () => {
           </CarouselItem>
           <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col">
             <Image
-              className="max-sm:w-40"
+              className="max-sm:w-[150px]"
               src={sextaImagemCarrousel}
               alt="Um brinco de esmeralda"
             />
