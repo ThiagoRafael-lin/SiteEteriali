@@ -45,14 +45,13 @@ export const Carrousel = () => {
               alt="Um colar de diamante"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:w-96 max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Memória Luminosa
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
                 Imagine um colar que vai além de uma simples joia. Um colar que
                 carrega consigo a essência de um ente querido, transformada em
-                uma peça única e atemporal. Uma criação que homenageia a vida e
-                o amor, perpetuando a lembrança daqueles que amamos.
+                uma peça única e atemporal.
               </p>
               <Button
                 onClick={handleButtonClick}
@@ -63,12 +62,12 @@ export const Carrousel = () => {
           </CarouselItem>
           <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col">
             <Image
-              className="max-sm:w-40"
+              className="max-sm:w-40 "
               src={segundaImagemCarrousel}
               alt="Um anel de diamante"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Alma Atemporal
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
@@ -76,8 +75,7 @@ export const Carrousel = () => {
                 um tesouro personalizado, criado com o amor e a memória de
                 alguém especial. Cada diamante, cuidadosamente elaborado a
                 partir de materiais orgânicos, guarda a essência única de quem
-                você ama, tornando essa joia uma relíquia inestimável para
-                celebrar um amor eterno.
+                você ama.
               </p>
               <Button onClick={handleButtonClick} children={"Ver Produto"} />
             </div>
@@ -89,7 +87,7 @@ export const Carrousel = () => {
               alt="Um brinco de diamante"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Paixão Atemporal
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
@@ -103,12 +101,12 @@ export const Carrousel = () => {
           </CarouselItem>
           <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col">
             <Image
-              className="w-[568px] h-[560px] max-sm:w-[200px] max-sm:h-[200px]"
+              className="w-[568px] h-[560px] max-sm:w-[170px] max-sm:h-[170px]"
               src={quartaImagemCarrousel}
               alt="Um diamante com uma safira"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Coração do Oceano
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
@@ -121,12 +119,12 @@ export const Carrousel = () => {
           </CarouselItem>
           <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col">
             <Image
-              className="w-[568px] h-[450px] max-sm:w-[130px] max-sm:h-[100px]"
+              className="w-[568px] h-[450px] max-sm:w-[160px] max-sm:h-[130px]"
               src={quintaImagemCarrousel}
               alt="Um anel de diamante"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Estrela Polar
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
@@ -145,15 +143,14 @@ export const Carrousel = () => {
               alt="Um brinco de esmeralda"
             />
             <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
-              <h2 className="text-[48px] font-lastri max-sm:text-[16px]">
+              <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Céu Estrelado
               </h2>
               <p className="leading-5 font-sulphur mb-4 max-sm:text-[16px] max-sm:text-center max-sm:p-4">
                 Um brilho eterno, um legado de amor. Nosso brinco de diamante é
                 uma joia única, criada com amor e dedicação. Cada diamante é
                 cuidadosamente selecionado e trabalhado para capturar a essência
-                daqueles que você ama. Use-o como um símbolo de sua conexão
-                eterna com seu ente querido.
+                daqueles que você ama.
               </p>
               <Button onClick={handleButtonClick} children={"Ver Produto"} />
             </div>

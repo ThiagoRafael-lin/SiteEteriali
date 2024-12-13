@@ -70,7 +70,9 @@ export const SecaoEtepiaalProdutos = () => {
   return (
     <div className="flex flex-col">
       <div className="flex flex-row items-center justify-center mb-9 mt-24">
-        <h2 className="font-lastri text-[48px]">Coleção Etepiaal</h2>
+        <h2 className="font-lastri text-[48px] max-sm:text-[32px]">
+          Coleção Etepiaal
+        </h2>
       </div>
       <div className="flex flex-col gap-1">
         <div className="flex flex-row gap-1 justify-between">

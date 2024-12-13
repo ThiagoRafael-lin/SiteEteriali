@@ -6,7 +6,7 @@ export const SustentabilidadePrimeiraImagem = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="flex items-center justify-center w-full mb-16 mt-16">
-        <p className="font-sulphur text-[24px] w-3/4 text-center">
+        <p className="font-sulphur text-[24px] w-3/4 text-center max-sm:text-[16px]">
           Nosso processo de criação de diamantes é meticulosamente projetado
           para minimizar o impacto ambiental. Utilizamos tecnologias avançadas
           que simulam as condições naturais de formação dos diamantes, sem a
@@ -26,7 +26,7 @@ export const SustentabilidadeSegundaImagem = () => {
   return (
     <div className="flex flex-col w-full">
       <div className="flex items-center justify-center w-full mb-16 mt-16">
-        <p className="font-sulphur text-[24px] w-3/4 text-center">
+        <p className="font-sulphur text-[24px] w-3/4 text-center max-sm:text-[16px]">
           Ao escolher um de nossos diamantes, você está optando por uma joia que
           não agride o meio ambiente. Nossos diamantes são criados de forma
           ética e responsável, contribuindo para a preservação dos recursos
