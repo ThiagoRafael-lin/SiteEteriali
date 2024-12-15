@@ -80,13 +80,13 @@ export const Carrousel = () => {
               <Button onClick={handleButtonClick} children={"Ver Produto"} />
             </div>
           </CarouselItem>
-          <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col">
+          <CarouselItem className="flex items-center justify-center gap-11 max-sm:flex max-sm:flex-col max-sm:py-4">
             <Image
               className="max-sm:w-40"
               src={terceiraImagemCarrousel}
               alt="Um brinco de diamante"
             />
-            <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center">
+            <div className="flex flex-col max-w-lg items-start justify-center max-sm:items-center ">
               <h2 className="text-[48px] font-lastri max-sm:text-[20px]">
                 Paixão Atemporal
               </h2>

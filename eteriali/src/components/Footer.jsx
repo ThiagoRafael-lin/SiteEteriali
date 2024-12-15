@@ -91,7 +91,7 @@ export const Footer = () => {
       </div>
 
       {/* NAVEGAÇÃO MOBILE */}
-      <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:py-8 md:hidden">
+      <div className="flex flex-col items-center p-12 h-full font-sulphur max-sm:items-center max-sm:py-8 md:hidden max-sm:pt-0">
         <div className="flex items-center justify-center">
           <Image className="w-[122px] mb-4" src={Logo} alt="Logo da eteriali" />
         </div>

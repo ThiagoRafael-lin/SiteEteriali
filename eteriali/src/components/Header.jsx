@@ -51,13 +51,22 @@ export const HeaderDefault = () => {
       {/* HEADER DESKTOP */}
       <nav className="flex flex-row items-center justify-between px-12 my-6 max-sm:hidden">
         <ul className="flex flex-row gap-20 text-[15px] text-balck w-full">
-          <Link href="/tela-produtos" className="font-sulphur">
+          <Link
+            href="/tela-produtos"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Produto
           </Link>
-          <Link href="/tela-sustentavel" className="font-sulphur">
+          <Link
+            href="/tela-sustentavel"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Sustentável
           </Link>
-          <Link href="/tela-sobre" className="font-sulphur">
+          <Link
+            href="/tela-sobre"
+            className="font-sulphur hover:opacity-35 transition-all"
+          >
             Sobre
           </Link>
         </ul>
