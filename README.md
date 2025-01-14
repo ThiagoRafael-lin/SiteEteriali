@@ -22,7 +22,7 @@ Eteriali é um projeto desenvolvido como parte do TCC para o curso técnico, rep
 
 4. **Detalhes do Produto**:
    - Página dedicada a mostrar mais detalhadamente um único produto.
-   - 
+
 ## Como Rodar o Projeto 🚀
 
 1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
