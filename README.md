@@ -1,63 +1,36 @@
-# Eteriali ✨
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Eteriali é um projeto desenvolvido como parte do TCC para o curso técnico, representando uma marca que transforma itens orgânicos em diamantes eternos. O site foi criado para apresentar os produtos, descrever o processo de produção sustentável e compartilhar a filosofia da marca.
+## Getting Started
 
-## Tecnologias Utilizadas 🛠️
+First, run the development server:
 
-- **Next.js**: Framework para construção do site.
-- **Tailwind CSS**: Estilização moderna e eficiente.
-- **ShadCN**: Componentes pré-construídos para agilizar o desenvolvimento.
-- **HTML, CSS e JavaScript**: Base para estrutura e funcionalidade do site.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Estrutura do Site 🌐
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. **Home**:
-   - Introduz o cliente à marca e seus valores.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-2. **Produtos**:
-   - Mostra todos os produtos oferecidos pela Eteriali.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-3. **Sustentabilidade**:
-   - Explica como os processos da Eteriali não afetam o meio ambiente.
+## Learn More
 
-4. **Detalhes do Produto**:
-   - Página dedicada a mostrar mais detalhadamente um único produto.
+To learn more about Next.js, take a look at the following resources:
 
-## Como Rodar o Projeto 🚀
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
-2. Clone o repositório:
-   ```bash
-   git clone <URL_DO_REPOSITORIO>
-   ```
-3. Instale as dependências:
-   ```bash
-   npm install
-   ```
-4. Inicie o servidor de desenvolvimento:
-   ```bash
-   npm run dev
-   ```
-5. Acesse o site no navegador em: `http://localhost:3000`
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Exemplo de Funcionalidades 🎨
+## Deploy on Vercel
 
-- Interface amigável e moderna.
-- Navegação intuitiva entre as páginas.
-- Modal para acesso rápido às informações das lojas físicas.
-- Banner destacando o compromisso com a sustentabilidade.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Contribuição 🌟
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
-
-## Contato 📧
-
-Para dúvidas ou sugestões, entre em contato:
-- **E-mail**: thiagorafael2005@gmail.com
-
----
-
-**Autor**: Thiago
-
-Projeto desenvolvido para o TCC, focado em demonstrar habilidades técnicas e práticas sustentáveis no desenvolvimento web.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
