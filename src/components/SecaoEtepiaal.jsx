@@ -18,6 +18,8 @@ export const SecaoEtepiaal = () => {
     router.push("/tela-produtos");
   };
 
+  //teste de deploy
+
   return (
     <div className="flex flex-col w-full">
       <div className="flex flex-row items-center justify-center mb-9 mt-24">
