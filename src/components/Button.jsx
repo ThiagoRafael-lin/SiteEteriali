@@ -9,6 +9,7 @@ export const Button = ({ children, styles, ...props }) => {
   );
 };
 
+//Botão com borda
 export const ButtonOutline = ({ children, styles, ...props }) => {
   return (
     <button
