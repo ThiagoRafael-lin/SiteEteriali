@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Eteriali
 
-## Getting Started
+Eteriali é um site que apresenta uma marca inovadora que transforma materiais orgânicos em diamantes eternos. Cada diamante carrega memórias e sentimentos, tornando-se uma lembrança única e especial. O site foi projetado com foco na emoção e na experiência do usuário, refletindo os valores e a essência da marca.
 
-First, run the development server:
+🌐 Acesso ao Site
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O link do site [site-eteriali.vercel.app]
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🛠 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+JavaScript: Linguagem utilizada para interatividade e dinamismo no site.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js: Framework para React que possibilita SSR (Server Side Rendering) e SSG (Static Site Generation).
 
-## Learn More
+Tailwind CSS: Utilizado para estilização rápida e eficiente.
 
-To learn more about Next.js, take a look at the following resources:
+React: Biblioteca para criação de interfaces dinâmicas e reativas.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📌 Funcionalidades
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Apresentação do Produto: Uma página inicial envolvente que transmite a essência e exclusividade dos diamantes.
 
-## Deploy on Vercel
+Explicação do Processo: Seção dedicada a demonstrar como os diamantes são criados a partir de materiais orgânicos.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Interação com o Usuário: Possibilidade de conhecer mais sobre o produto, sua história e a ciência por trás da criação.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Design Intuitivo e Sensível: Cada detalhe do site foi pensado para transmitir emoção e significado.
+
+Caso tenha dúvidas ou sugestões, entre em contato!
+
+Este projeto foi desenvolvido como parte do TCC, refletindo a importância da memória e dos sentimentos na criação de algo eterno.
+
